@@ -1,16 +1,55 @@
-# React + Vite
+# One at a Time — the next-right-thing picker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live app: https://one-at-a-time.vercel.app**
 
-Currently, two official plugins are available:
+## The idea
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+End task-list paralysis.
 
-## React Compiler
+A long to-do list is a wall you stare at; One at a Time never shows you the
+wall. You open the app and it hands you exactly one task — the next right
+thing — chosen from your list by a scoring picker that weighs urgency, due
+dates, and how actionable a task actually is. Do it, or swipe it away and
+get the next one. The list manages itself in the background.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## What the current version does
 
-## Expanding the ESLint configuration
+- **One-task focus view** — a single task on screen, with swipe to accept
+  or dismiss to the next pick
+- **Smart picker** — scores tasks on urgency, due dates, and actionability
+  (including a penalty for vague tasks), then picks with weighted randomness
+  so it isn't the same order every time
+- **Quick task capture** — add tasks with a due date and an urgent flag
+- **All-tasks list and archive** — the full list is there when you want it;
+  done and dismissed tasks move out of the way
+- **Stats** — see what you've actually been getting through
+- **Sign-in** with Google, or continue anonymously and link the account
+  later
+- **Installable PWA** — mobile-first, works offline, home-screen ready
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech stack
+
+- **Framework:** React + Vite
+- **Styling:** Tailwind CSS
+- **Auth & database:** Firebase Authentication (Google + anonymous) and
+  Cloud Firestore
+- **PWA:** vite-plugin-pwa (offline shell, install prompt)
+
+## Run it locally
+
+```bash
+npm install
+npm run dev   # Vite dev server
+```
+
+Firebase config lives in the app's Firebase client setup — point it at your
+own Firebase project (Authentication + Firestore) to run your own instance.
+
+## Deployment
+
+Hosted on Vercel from this repo's `main` branch.
+
+---
+
+Part of a one-person studio building focus tools for scattered brains —
+small apps, each built around one daily loop.
