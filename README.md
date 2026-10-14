@@ -1,6 +1,6 @@
 # One at a Time — the next-right-thing picker
 
-**Live app: https://one-at-a-time.vercel.app**
+**Live app: https://oneatatime-seven.vercel.app**
 
 ## The idea
 
