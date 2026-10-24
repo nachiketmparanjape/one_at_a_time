@@ -1,5 +1,7 @@
 # One at a Time — the next-right-thing picker
 
+> **Purpose:** ORIENT — a stranger understands what One at a Time is, and that it is live, in 60 seconds.
+
 **Live app: https://oneatatime-seven.vercel.app**
 
 ## The idea
