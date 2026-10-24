@@ -49,6 +49,16 @@ own Firebase project (Authentication + Firestore) to run your own instance.
 
 Hosted on Vercel from this repo's `main` branch.
 
+## Documentation
+
+The product's working documents live in [`docs/`](docs/):
+
+- [`docs/VISION.md`](docs/VISION.md) — purpose, scope, non-goals
+- [`docs/PRODUCT.md`](docs/PRODUCT.md) — what the current version does, and why
+- [`docs/BACKLOG.md`](docs/BACKLOG.md) — waiting work
+- [`docs/SHIPPED.md`](docs/SHIPPED.md) — per-update history
+- [`CLAUDE.md`](CLAUDE.md) — agent context: run/deploy, gotchas
+
 ---
 
 Part of a one-person studio building focus tools for scattered brains —
